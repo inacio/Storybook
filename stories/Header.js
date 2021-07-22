@@ -24,15 +24,15 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
             />
           </g>
         </svg>
-        <h1>Acme</h1>
+        <h1>Teste</h1>
       </div>
       <div>
         {user ? (
-          <Button size="small" onClick={onLogout} label="Log out" />
+          <Button size="medium" onClick={onLogout} label="Log out" />
         ) : (
           <>
-            <Button size="small" onClick={onLogin} label="Log in" />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
+            <Button size="medium" onClick={onLogin} label="Log in" />
+            <Button primary size="medium" onClick={onCreateAccount} label="Sign up" />
           </>
         )}
       </div>
